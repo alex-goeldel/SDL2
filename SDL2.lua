@@ -24,11 +24,6 @@ project "SDL2"
 
 	vectorextensions  "SSE"               -- Necessary to run x32.
 
-	location          "Intermediate/ProjectFiles/%{_ACTION}"
-
-	targetdir         "Binaries/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-	objdir            "Intermediate/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/%{prj.name}"
-
 	includedirs      {"include"}
 
 	filter "system:windows"
